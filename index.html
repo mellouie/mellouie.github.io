@@ -1,7 +1,129 @@
 <!DOCTYPE html>
 <html>
+<head>
+	
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,100' rel='stylesheet' type='text/css'>
+	
+	<style>
+
+	html{
+		font-family: 'Roboto', sans-serif;
+		color: #999999;
+		background: #333333;	
+	}
+	
+	body{
+		padding: 30px;
+	}
+
+	div{
+		float: left;
+		border: 1px solid #444444;
+		padding: 0 25px 0 25px;
+		margin-right: 25px;
+	}
+	
+	h1{
+		font-size: 1.65em;
+	}
+		
+	h3{}
+	
+	h4 {
+		display: block;
+		font-size: 1.15em;
+		color: #666666;
+	}
+		
+	p{
+		font-size: 0.8em;
+	}
+
+	a:link, a:hover, a:active, a:visited{
+		color: #666666;
+		text-decoration: none;
+	}
+	
+	a:hover{
+		color: #ff475a;
+	}
+
+	ol {
+		counter-reset: li;
+		list-style: none;
+		padding: 0;
+	}
+
+	li {
+		padding: 2.5em;
+		padding-top: .5em;
+		padding-bottom: 0em;
+	}
+
+	ol h4 {
+		position: relative;
+		margin: 0;
+	}
+
+	ol h4:before {
+		content: counter(li);
+		counter-increment: li;
+		position: absolute;
+		z-index: -1;
+		left: -2.5em;
+		top: -.4em;
+		background: #333;
+		padding: 4px 2px 0 2px;
+		height: 1.5em;
+		width: 1.5em;
+		border: .1em solid rgba(0,0,0,.05);
+		text-align: center;
+		color: #ccc;
+		-moz-border-radius: 1.5em;
+		-webkit-border-radius: 1.5em;
+		border-radius: 1.5em;
+		-webkit-transition: all .2s ease-out;
+		-moz-transition: all .2s ease-out;
+		-ms-transition: all .2s ease-out;
+		-o-transition: all .2s ease-out;
+		transition: all .2s ease-out;
+	}
+
+	ol li:hover h4:before{
+		background-color: #ff475a;
+	    border-color: rgba(0,0,0,.08);
+	    border-width: .2em;
+	    color: #444;
+	    -webkit-transform: scale(1.25);
+	    -moz-transform: scale(1.25);
+	    -ms-transform: scale(1.25);
+	    -o-transform: scale(1.25);
+	    transform: scale(1.25);
+	}
+
+	</style>
+	
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<h1>Programming Samples</h1>
+
+<div>
+	<h3>Email Developement</h3>
+	<ol>
+	    <li>
+	        <h4>Ariad Email</h4>
+	        <p>
+				<a href="http://mellouie.github.io/email-development/ariad_2015-01-22_en.html">Email</a> | 
+				<a href="https://github.com/mellouie/email-development/blob/gh-pages/ariad_2015-01-22_en.html">Code</a></p>
+	    </li>
+	    <li>
+	        <h4>Visa Email</h4>
+	        <p>
+				<a href="http://mellouie.github.io/email-development/visa_2015-01-20.html">Email</a> | 
+				<a href="https://github.com/mellouie/email-development/blob/gh-pages/visa_2015-01-20.html">Code</a></p>
+	    </li>          
+	</ol>
+</div>
+
 </body>
 </html>
